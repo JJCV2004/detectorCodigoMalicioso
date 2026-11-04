@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="contenedor-login">
+    <h2>Iniciar Sesion</h2>
+    <form id="formularioLogin">
+        <div class="grupo-input">
+            <label for="usuario">Usuario</label>
+            <!-- Aseguramos que el id sea exactamente 'usuario' -->
+            <input type="text" name="usuario" id="usuario" required>
+        </div>
+        <div class="grupo-input">
+            <label for="pwd">Password</label>
+            <!-- Aseguramos que el id sea exactamente 'pwd' -->
+            <input type="password" name="pwd" id="pwd" required>
+        </div>
+        <button type="submit">Ingresar</button>
+    </form>
+    <!-- Aquí es donde se pintará el texto del SWAT o éxito -->
+    <p id="mensaje"></p>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
